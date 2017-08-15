@@ -2,6 +2,7 @@
 - MongoDB
 
 # Instructions:
-- config the app with your MongoDB host and port
-- run app.py
-- use swagger on \<hostname\>/swagger to get API documentation and usage
+- Config the app with your MongoDB host and port
+- Install requirements (pip install -r requirements.txt)
+- Run app.py
+- Use swagger on \<hostname\>/swagger to get API documentation and usage
