@@ -1,0 +1,5 @@
+APP_PORT = 9000
+MONGO_HOST = 'localhost'
+MONGO_PORT = 27017
+DB_NAME = 'argus'
+PATHS_COLLECTION_NAME = 'paths'

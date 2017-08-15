@@ -1,0 +1,73 @@
+{
+  "swagger": "2.0",
+
+  "info": {
+    "title": "Argus Home Test",
+    "version": "1.0"
+  },
+
+  "paths": {
+    "/{path}": {
+      "post": {
+        "summary": "Add a new JSON to this path",
+        "operationId": "index",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "JSON to be added",
+            "required": true,
+            "schema":{
+              "type": "object"
+            }
+          },
+          {
+            "name": "path",
+            "in": "path",
+            "description": "JSON path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON added"
+          },
+          "400": {
+            "description": "Not a JSON"
+          }
+        }
+      },
+      "get": {
+        "summary": "get JSON by path",
+        "operationId": "index",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "path",
+            "in": "path",
+            "description": "JSON path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "404": {
+            "description": "JSON not found"
+          }
+        }
+      }
+    }
+  }
+}
