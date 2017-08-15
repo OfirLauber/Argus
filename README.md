@@ -1,5 +1,6 @@
 # Requirements:
 - MongoDB
+- Python3.6
 
 # Instructions:
 - Config the app with your MongoDB host and port
